@@ -6,9 +6,9 @@ import postRoutes from "./src/routes/posts.js"
 
 const app = express();
 
+app.use(cors());
 app.use("/posts", postRoutes)
 
-app.use(cors());
 
 const CONNECTION_URL = "mongodb+srv://AlbertJM:python@cluster0.s8uxibm.mongodb.net/?retryWrites=true&w=majority";
 const PORT = 5000;
