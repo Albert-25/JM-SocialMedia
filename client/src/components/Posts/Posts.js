@@ -7,17 +7,17 @@ import { useSelector } from "react-redux";
 
 const Posts = () => {
     const classes = useStyles();
-    const posts = useSelector(state=>state.posts)
+    const posts = useSelector(state => state.posts)
 
-    console.log(posts);
+    console.log("here the posts", posts);
 
     return (
         <>
             <h1>
                 Posts
             </h1>
-            <Post/>
-            <Post/>
+            <Post />
+            <Post />
         </>
     )
 }
